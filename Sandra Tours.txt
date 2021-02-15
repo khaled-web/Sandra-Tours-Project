@@ -20,3 +20,20 @@ section.section#about>
                     article.about-img> img.about-photo
                      
                     article.about-info> h3 + 2*p + a.btn 
+
+..............................................................................
+..............................................................................
+..............................................................................
+
+section.section.services#services>
+
+                div.section-title> h2 + span
+   
+                div.section-center.services-center>
+                                   
+                                   3*article.service> 
+                               
+                                           span.service-icon> icon +
+
+                                           div.service-info> h4.service-title + p.service-text
+                                           
