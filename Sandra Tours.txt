@@ -11,6 +11,7 @@ div.content-divider
 ..............................................................................
 ..............................................................................
 ..............................................................................
+
 section.section#about>
 
         div.section-title>h2>span
@@ -37,3 +38,23 @@ section.section.services#services>
 
                                            div.service-info> h4.service-title + p.service-text
                                            
+
+
+..............................................................................
+..............................................................................
+..............................................................................
+
+section.section#featured> 
+
+                div.section-title> h2 + span
+
+                div.section-center.featured-center>
+
+                                   4*article.tour-card> 
+                                           
+                                          .div.tour-img-container> img.tour-img + p.tour-date
+                                       
+                                          .div.tour-info> (div.tour-title> h4 + p) + p + (div.tour-footer> (p>span>icon) + p)
+
+                                    div.tour-btn> a.tour-btn
+               
