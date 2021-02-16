@@ -57,4 +57,17 @@ section.section#featured>
                                           .div.tour-info> (div.tour-title> h4 + p) + p + (div.tour-footer> (p>span>icon) + p)
 
                                     div.tour-btn> a.tour-btn
+
+
+..............................................................................
+..............................................................................
+..............................................................................
+
+section.section.contact#contact>
+
+                       .div.section-center.contact-center>
+     
+                                          article.contact-title> h3 + p
+
+				           form.contact-form>input.form-control + button.btn-submit
                
