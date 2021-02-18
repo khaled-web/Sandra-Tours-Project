@@ -1,3 +1,17 @@
+nav.navbar>
+
+   div.nav-center>
+
+       div.nav-header> (div.title>h2.nav-text.section-title> span) + (button.nav-toggle#nav-toggle>icon)
+
+       ul.nav-links#nav-links> 5*(li>a.nav-link.scroll-link)
+
+       ul.nav-icons> 3*(li>a.nav-icon)
+
+..............................................................................
+..............................................................................
+..............................................................................
+
 header#home> div.hero> div.hero-banner>
 
                            h1+ p+ a.btn.hero-btn.scroll-link

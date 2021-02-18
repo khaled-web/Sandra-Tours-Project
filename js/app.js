@@ -1,17 +1,25 @@
-// // ********** set date ************
-// // select span
-// const date = (document.getElementById(
-//   "date"
-// ).innerHTML = new Date().getFullYear());
+// ********** set date ************
+// select span
+document.getElementById("date").innerHTML = new Date().getFullYear();
+
+// ********** nav toggle ************
+// select button and links
+const navBtn = document.getElementById("nav-toggle");
+const links = document.getElementById("nav-links");
+// add event listener
+navBtn.addEventListener("click", () => {
+ links.classList.toggle("show-links");
+});
 
 // // ********** nav toggle ************
-// // select button and links
-// const navBtn = document.getElementById("nav-toggle");
-// const links = document.getElementById("nav-links");
-// // add event listener
-// navBtn.addEventListener("click", () => {
-//   links.classList.toggle("show-links");
-// });
+// const clearField = () => {
+//  let field, fieldArr;
+//  field = document.querySelectorAll('.form-control');
+//  fieldArr = Array.from(field);
+//  fieldArr.forEach((el) => el.value = '');
+// }
+
+document.querySelector('.btn-submit').addEventListener('click', clearField);
 
 // // ********** smooth scroll ************
 // // select links
