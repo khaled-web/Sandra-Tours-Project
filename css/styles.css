@@ -190,7 +190,7 @@ Navbar
 */
 .navbar{
   position: fixed;
-  top: 0;
+  top: 0; 
   left: 0;
   width: 100%;
   background: var(--clr-white);
@@ -263,12 +263,67 @@ Navbar
   color: var(--clr-primary-1);
   background: linear-gradient(to bottom,var(--clr-white),var(--clr-primary-9), var(--clr-white));
   padding-left: 2.25rem;
-  border-left: 0.25rem solid var(--clr-grey-8);
 }
 
 
 .nav-icons{
   display: none;
+}
+
+@media screen and (min-width:992px){
+  /* hidden toggle button */
+
+  .nav-bar{
+    padding: 1rem 2rem;
+  }
+
+  .nav-toggle{
+    display: none;
+  }
+
+  .nav-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* optional */
+    flex-wrap: wrap;
+  }
+
+  .nav-links{
+    height: auto;
+    display: flex;
+  }
+
+  .nav-header{
+    padding: 1rem 0;
+  }
+
+  .nav-link{
+    padding: 0 0;
+    margin-right: 0.7rem;
+  }
+
+  .nav-link:hover{
+    padding: 0;
+    color: var(--clr-primary-2);
+    background: transparent;
+  }
+
+  .nav-icons{
+    display: flex;
+  }
+
+  .nav-icon{
+    margin-right: 0.7rem;
+    color: var(--clr-primary-5);
+    font-size: 1.2rem;
+    transition: var(--transition);
+
+  }
+
+  .nav-icon:hover{
+    color: var(--clr-primary-8);
+  }
 }
 
 /*
@@ -287,7 +342,7 @@ Hero
 
 .hero-banner{
   text-align: center;
-  color: var(--clr-white);
+  color: var(--clr-primary-8);
 }
 
 .hero-banner h1{
@@ -298,8 +353,8 @@ Hero
   max-width: 35rem;
   margin-left: auto;
   margin-right: auto;
-  color: var(--clr-white);
-  letter-spacing: var(--spacing);
+  color: var(--clr-primary-9);
+  /* letter-spacing: var(--spacing); */
 }
 
 .hero-btn{
@@ -317,7 +372,7 @@ Hero
 
 @media screen and (min-width:768px){
   .hero{
-    background: linear-gradient(rgba(44,174,186,0.7), rgba(0, 0, 0, 0.7)) ,url('../images/main.jpeg') center/cover no-repeat;
+    background: linear-gradient(rgba(44,174,186,0.7), rgba(0, 0, 0, 0.7)) ,url('../images/landing image.jpg') center/cover no-repeat;
   }
 
   .hero-banner{
@@ -656,10 +711,12 @@ Gallery
     height: 17rem;
     object-fit: cover;
     transition: var(--transition);
+    transform: scale(1.02);
   }
 
   .gallery-img-container:hover .gallery-img{
     opacity: 0.5;
+    transform: scale(1.00);
   }
 
   .gallery-img-container:hover .gallery-icon{
