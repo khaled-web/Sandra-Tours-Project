@@ -12,12 +12,12 @@ navBtn.addEventListener("click", () => {
 });
 
 // ********** nav toggle ************
-const clearField = () => {
- let field, fieldArr;
- field = document.querySelectorAll('.form-control');
- fieldArr = Array.from(field);
- fieldArr.forEach((el) => el.value = '');
-}
+// const clearField = () => {
+//  let field, fieldArr;
+//  field = document.querySelectorAll('.form-control');
+//  fieldArr = Array.from(field);
+//  fieldArr.forEach((el) => el.value = '');
+// }
 
 document.querySelector('.btn-submit').addEventListener('click', clearField);
 
