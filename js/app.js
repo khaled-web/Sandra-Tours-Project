@@ -19,7 +19,7 @@ navBtn.addEventListener("click", () => {
 //  fieldArr.forEach((el) => el.value = '');
 // }
 
-document.querySelector('.btn-submit').addEventListener('click', clearField);
+// document.querySelector('.btn-submit').addEventListener('click', clearField);
 
 // ********** smooth scroll ************
 // select links
